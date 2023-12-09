@@ -1,0 +1,8 @@
+.navbar {
+    background-color: rgba(66, 77, 77, 0.575);
+}
+
+.navbar-nav a, .navbar-toggler {
+    color: white;
+    text-decoration: none;
+}

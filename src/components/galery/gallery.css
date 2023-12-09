@@ -1,0 +1,24 @@
+.travelGallery h1 {
+    margin: 50px 0;
+    text-align: center;
+    color: var(--text);
+}
+
+.travelGallery .card {
+    color: var(--text);
+    background-color: var(--secondary);
+}
+
+.travelCard pre {
+    overflow: "hidden";
+}
+
+.btn {
+    color: var(--textBtn);
+    background-color: var(--primary);
+}
+
+.btn:hover {
+    color: var(--textBtn);
+    background-color: var(--accent);
+}

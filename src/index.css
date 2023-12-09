@@ -1,0 +1,20 @@
+#app[data-theme="light"] {
+    --text: #292929;
+    --textBtn: #ffffff;
+    --background: #fffbfa;
+    --primary: #045a76;
+    --secondary: #fcbfab;
+    --accent: #07a1d5;
+}
+#app[data-theme="dark"] {
+    --text: #ffffff;
+    --textBtn: #292929;
+    --background: #050100;
+    --primary: #89defb;
+    --secondary: #912805;
+    --accent: #2ac5f8;
+}
+
+#app {
+    background-color: var(--background);
+}

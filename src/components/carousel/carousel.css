@@ -1,0 +1,8 @@
+.carouelImg {
+    width: 100%;
+}
+
+.btn {
+    color: var(--textBtn);
+    background-color: var(--primary);
+}
