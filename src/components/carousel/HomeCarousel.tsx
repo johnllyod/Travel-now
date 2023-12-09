@@ -1,8 +1,8 @@
 import "./carousel.css";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import CarouselImage from "./CarouselImage";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const HomeCarousel = () => {
   const inputRef = useRef<HTMLInputElement>(null);
