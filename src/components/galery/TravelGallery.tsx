@@ -29,7 +29,7 @@ const TravelGallery = ({ countryInfo }: props) => {
                   to={`/Country`}
                   state={{ from: item.country }}
                 >
-                  Go somewhere
+                  More
                 </Link>
               </Card.Body>
             </pre>

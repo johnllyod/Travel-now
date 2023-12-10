@@ -1,8 +1,8 @@
 import "./carousel.css";
 import { useRef } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import CarouselImage from "./CarouselImage";
+import { Carousel } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import CarouselImage from "./CarouselImage";
 
 const HomeCarousel = () => {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -18,13 +18,13 @@ const HomeCarousel = () => {
     <div className="position-relative">
       <Carousel>
         <Carousel.Item interval={5000}>
-          <CarouselImage text="./src/assets/Paris.jpg" />
+          <CarouselImage text="/images/Paris.jpg" />
         </Carousel.Item>
         <Carousel.Item interval={5000}>
-          <CarouselImage text="./src/assets/Vaitape.jpg" />
+          <CarouselImage text="/images/Vaitape.jpg" />
         </Carousel.Item>
         <Carousel.Item interval={5000}>
-          <CarouselImage text="./src/assets/Glacier National Park.jpg" />
+          <CarouselImage text="/images/Glacier_National_Park.jpg" />
         </Carousel.Item>
       </Carousel>
       <div className="input-group w-50 position-absolute top-50 start-50 translate-middle">

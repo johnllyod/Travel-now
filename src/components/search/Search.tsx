@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import "./search.css";
 import { Card } from "react-bootstrap";
+import { useEffect } from "react";
 
 interface props {
   countryInfo: {
@@ -13,6 +14,10 @@ interface props {
 const Search = ({ countryInfo }: props) => {
   const location = useLocation();
   var resultCount = 0;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -38,7 +43,7 @@ const Search = ({ countryInfo }: props) => {
                         to={`/Country`}
                         state={{ from: item.country }}
                       >
-                        Go somewhere
+                        More
                       </Link>
                     </Card.Body>
                   </pre>

@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import "./country.css";
 import { Container } from "react-bootstrap";
+import { useEffect } from "react";
 
 interface props {
   countryInfo: {
@@ -17,6 +18,10 @@ const Country = ({ countryInfo }: props) => {
   const countrySelected = countryInfo.find((obj) => {
     return obj.country === from;
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

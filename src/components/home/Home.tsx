@@ -1,6 +1,7 @@
 import "./home.css";
 import HomeCarousel from "../carousel/HomeCarousel";
 import TravelGallery from "../galery/TravelGallery";
+import { useEffect } from "react";
 
 interface props {
   countryInfo: {
@@ -11,6 +12,10 @@ interface props {
 }
 
 const Home = ({ countryInfo }: props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="mb-5">
       <HomeCarousel />

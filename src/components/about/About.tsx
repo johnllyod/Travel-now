@@ -15,7 +15,7 @@ const About = () => {
           </p>
         </Container>
       </div>
-      <img src="./src/assets/Airplane.jpg" alt="Airplane" />
+      {/* <img src="./src/assets/Airplane.jpg" alt="Airplane" /> */}
     </div>
   );
 };

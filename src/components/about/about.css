@@ -1,7 +1,12 @@
 .about {
     width: 100%;
-    height: auto;
+    height: 50rem;
     position: relative;
+    background-image: url("./images/Airplane.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .aboutInner {
@@ -10,10 +15,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--text);
+    color: white;
 }
 
 .about h1 {
+    color: white;
     text-align: center;
 }
 
