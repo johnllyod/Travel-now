@@ -2,6 +2,7 @@
   "name": "travelnow",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://johnllyod.github.io/Travel-now/",
   "type": "module",
   "scripts": {
     "dev": "vite",

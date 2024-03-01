@@ -26,7 +26,7 @@ const TravelGallery = ({ countryInfo }: props) => {
                 </Card.Text>
                 <Link
                   className="btn"
-                  to={`/Country`}
+                  to={`/Travel-now/Country`}
                   state={{ from: item.country }}
                 >
                   More
