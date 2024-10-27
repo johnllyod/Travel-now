@@ -8,10 +8,11 @@ const About = () => {
         <Container>
           <h1>About</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-            molestias tempora sequi non, nemo quod reprehenderit molestiae
-            natus. Voluptatum, voluptate natus. Necessitatibus vero rerum quam,
-            velit vitae reprehenderit. Minus, minima!
+            Welcome to Travel Now, your ultimate gateway to discovering the
+            world’s most breathtaking destinations. Whether you’re a seasoned
+            traveler or planning your first adventure, our site offers a curated
+            selection of must-visit tourist spots, from iconic landmarks to
+            off-the-beaten-path treasures.
           </p>
         </Container>
       </div>

@@ -3,10 +3,18 @@ import "./search.css";
 import { Card } from "react-bootstrap";
 import { useEffect } from "react";
 
+interface attractionDetails {
+  name: string;
+  image: string;
+  details: string;
+  location: string;
+  map: string;
+}
+
 interface props {
   countryInfo: {
     country: string;
-    touristAttraction: string[];
+    touristAttraction: attractionDetails[];
     imageLink: string;
   }[];
 }
@@ -36,11 +44,11 @@ const Search = ({ countryInfo }: props) => {
                     <Card.Body>
                       <Card.Title>{item.country}</Card.Title>
                       <Card.Text>
-                        Tourist spots: {item.touristAttraction[0]}
+                        Tourist spots: {item.touristAttraction[0].name}
                       </Card.Text>
                       <Link
                         className="btn"
-                        to={`/Country`}
+                        to={`/Travel-now/Country`}
                         state={{ from: item.country }}
                       >
                         More

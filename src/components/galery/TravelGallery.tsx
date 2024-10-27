@@ -2,10 +2,18 @@ import { Card, Container } from "react-bootstrap";
 import "./gallery.css";
 import { Link } from "react-router-dom";
 
+interface attractionDetails {
+  name: string;
+  image: string;
+  details: string;
+  location: string;
+  map: string;
+}
+
 interface props {
   countryInfo: {
     country: string;
-    touristAttraction: string[];
+    touristAttraction: attractionDetails[];
     imageLink: string;
   }[];
 }
@@ -22,7 +30,7 @@ const TravelGallery = ({ countryInfo }: props) => {
               <Card.Body>
                 <Card.Title>{item.country}</Card.Title>
                 <Card.Text>
-                  Tourist spots: {item.touristAttraction[0]}
+                  Tourist spots: {item.touristAttraction[0].name}
                 </Card.Text>
                 <Link
                   className="btn"

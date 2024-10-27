@@ -1,22 +1,53 @@
-.countryHeader{
-    width: 100%;
-    height: 50rem;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+.countryHeader {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-.countryHeader h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+.countryHeader h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .countryInfo {
-    padding: 50px;
-    color: var(--text);
+  margin-top: 50px;
+}
+
+.countryInfo .attractionContainer {
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.attractionDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+.attractionDetails img {
+  max-width: 30vw;
+}
+
+@media (max-width: 980px) {
+  .attractionDetails img {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .attractionDetails {
+    flex-direction: column;
+  }
 }

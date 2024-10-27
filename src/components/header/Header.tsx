@@ -29,7 +29,11 @@ const Header = () => {
       >
         <Container>
           <Link className="navbar-brand" to={"/Travel-now/"}>
-            Travel now
+            <img
+              src="/Travel-now/images/favicon.ico"
+              style={{ maxWidth: "32px", translate: "0 -15%" }}
+            />
+            ravel now
           </Link>
           <FontAwesomeIcon
             icon={light ? faSun : faMoon}

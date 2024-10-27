@@ -10,7 +10,9 @@ const HomeCarousel = () => {
 
   function handleSearch() {
     if (inputRef.current?.value) {
-      navigate("/Search", { state: { searchval: inputRef.current.value } });
+      navigate("/Travel-now/Search", {
+        state: { searchval: inputRef.current.value },
+      });
     }
   }
 
@@ -27,7 +29,7 @@ const HomeCarousel = () => {
           <CarouselImage text="/Travel-now/images/Glacier_National_Park.jpg" />
         </Carousel.Item>
       </Carousel>
-      <div className="input-group w-50 position-absolute top-50 start-50 translate-middle">
+      <div className="input-group w-50 searchInput">
         <input
           ref={inputRef}
           id="searchval"

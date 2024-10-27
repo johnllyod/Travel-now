@@ -1,8 +1,16 @@
 .carouelImg {
-    width: 100%;
+  width: 100%;
+  max-height: 100vh;
+}
+
+.searchInput {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
 
 .btn {
-    color: var(--textBtn);
-    background-color: var(--primary);
+  color: var(--textBtn);
+  background-color: var(--primary);
 }

@@ -2,11 +2,21 @@ import { useLocation } from "react-router-dom";
 import "./country.css";
 import { Container } from "react-bootstrap";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+
+interface attractionDetails {
+  name: string;
+  image: string;
+  details: string;
+  location: string;
+  map: string;
+}
 
 interface props {
   countryInfo: {
     country: string;
-    touristAttraction: string[];
+    touristAttraction: attractionDetails[];
     imageLink: string;
   }[];
 }
@@ -39,9 +49,32 @@ const Country = ({ countryInfo }: props) => {
       <div className="countryInfo">
         <Container>
           <h3>Tourist attractions</h3>
-          {countrySelected?.touristAttraction.map((item, index) => (
-            <p>{index + 1 + ". " + item}</p>
-          ))}
+          <div className="attractionContainer">
+            {countrySelected?.touristAttraction.map((item) => (
+              <div className="attractionDetails">
+                <img src={item.image} alt={item.name} />
+                <div>
+                  <h2>{item.name}</h2>
+                  <p>
+                    <FontAwesomeIcon icon={faLocationDot} className="me-2" />
+                    {item.location}
+                  </p>
+                  <p>
+                    <FontAwesomeIcon icon={faCircleInfo} className="me-2" />
+                    {item.details}
+                  </p>
+                  <iframe
+                    src={item.map}
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            ))}
+          </div>
         </Container>
       </div>
     </>

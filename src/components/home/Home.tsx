@@ -3,10 +3,18 @@ import HomeCarousel from "../carousel/HomeCarousel";
 import TravelGallery from "../galery/TravelGallery";
 import { useEffect } from "react";
 
+interface attractionDetails {
+  name: string;
+  image: string;
+  details: string;
+  location: string;
+  map: string;
+}
+
 interface props {
   countryInfo: {
     country: string;
-    touristAttraction: string[];
+    touristAttraction: attractionDetails[];
     imageLink: string;
   }[];
 }
